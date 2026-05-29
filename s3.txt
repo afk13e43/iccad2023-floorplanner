@@ -1,0 +1,6 @@
+case01: HPWL=153181886.0  threads=8  total_samples=7645696  legal=YES
+case02: HPWL=19945488.5  threads=8  total_samples=3604992  legal=YES
+case03: HPWL=1868232.0  threads=8  total_samples=1409536  legal=YES
+case04: HPWL=60713750.0  threads=8  total_samples=5077504  legal=YES
+case05: HPWL=15472050.0  threads=8  total_samples=4751616  legal=YES
+case06: HPWL=35527950.0  threads=8  total_samples=3224064  legal=YES
