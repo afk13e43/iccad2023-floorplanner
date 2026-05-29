@@ -50,6 +50,24 @@ Score in the contest is `(best_HPWL / your_HPWL)^2`, so lower is better; the
 30-minute time budget allows much longer runs (and all 32 cores) for further
 gains.
 
+## Placement renders
+
+Soft modules (blue) spread toward their connected fixed pads (red); grey lines
+are nets (thickness ∝ weight). Rendered by `tools/visualize.py`.
+
+<table>
+<tr>
+<td align="center"><b>case 1</b><br><img src="results/case01.png" width="260"></td>
+<td align="center"><b>case 2</b><br><img src="results/case02.png" width="260"></td>
+<td align="center"><b>case 3</b><br><img src="results/case03.png" width="260"></td>
+</tr>
+<tr>
+<td align="center"><b>case 4</b><br><img src="results/case04.png" width="260"></td>
+<td align="center"><b>case 5</b><br><img src="results/case05.png" width="260"></td>
+<td align="center"><b>case 6</b><br><img src="results/case06.png" width="260"></td>
+</tr>
+</table>
+
 ## How it works
 
 - **Representation** — a Sequence Pair `(posSeq, negSeq)` over the soft modules.
