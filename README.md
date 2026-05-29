@@ -10,6 +10,26 @@ modules / pads** (fixed position and size), place every soft module legally so
 that the total **HPWL** (half-perimeter wire length, summed over weighted
 two-pin nets) is minimised.
 
+## Quick start
+
+```sh
+# 1. build solver + checker
+make                                        # or see "Build" below
+
+# 2. solve a case (args: input  output  [seconds]  [threads]) and verify it
+./prog testcases/case06-input.txt results/out06.txt 60 8
+./checker testcases/case06-input.txt results/out06.txt
+
+# 3. one-liner via Makefile: build + solve + verify a single case
+make run CASE=06 SEC=60 TH=8
+
+# 4. render the placement to a PNG (needs matplotlib)
+python tools/visualize.py testcases/case06-input.txt results/out06.txt result_case06.png
+```
+
+> On this Windows box, matplotlib lives in the `botsort` conda env:
+> `C:\Users\afk13\miniconda3\envs\botsort\python.exe tools\visualize.py ...`
+
 ## Results
 
 Each case run for **30 s on 8 threads**; every result is **legal** (verified
