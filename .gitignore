@@ -15,6 +15,7 @@ a.out
 __pycache__/
 *.pyc
 
-# Scratch / generated PNGs at repo root (results/ is tracked)
+# Scratch / generated files at repo root (results/ and testcases/ are tracked)
 /result*.png
 /*.tmp
+/*.txt
