@@ -1,0 +1,20 @@
+# Build artifacts
+*.exe
+*.o
+*.obj
+prog
+prog2
+progg
+checker
+a.out
+
+# Local agent / editor state
+.claude/
+
+# Python
+__pycache__/
+*.pyc
+
+# Scratch / generated PNGs at repo root (results/ is tracked)
+/result*.png
+/*.tmp
