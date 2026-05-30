@@ -32,23 +32,24 @@ python tools/visualize.py testcases/case06-input.txt results/out06.txt result_ca
 
 ## Results
 
-Each case run for **30 s on 8 threads**; every result is **legal** (verified
-independently by `src/checker.cpp`). Baseline = the author's previous best
-solutions for these public cases (cases 1/2/4 of which used rectilinear
-polygons). This solver beats all six **using rectangles only**:
+Each case run for the contest budget of **30 min on 32 threads**; every result
+is **legal** (verified independently by `src/checker.cpp`). Baseline = the
+author's previous best solutions for these public cases (cases 1/2/4 of which
+used rectilinear polygons). This solver beats all six **using rectangles only**:
 
 | case | this solver | previous best | improvement |
 |-----:|------------:|--------------:|:-----------:|
-| 1 | 152,951,060   | 158,482,214   | −3.5 % |
-| 2 | 19,358,386    | 20,966,740.5  | −7.7 % |
-| 3 | 1,851,295     | 1,940,779     | −4.6 % |
-| 4 | 60,612,487.5  | 62,810,312.5  | −3.5 % |
-| 5 | 15,558,050    | 16,448,450    | −5.4 % |
-| 6 | 35,197,150    | 35,864,550    | −1.9 % |
+| 1 | 152,882,760   | 158,482,214   | −3.5 %  |
+| 2 | 18,264,463.5  | 20,966,740.5  | −12.9 % |
+| 3 | 1,819,156.5   | 1,940,779     | −6.3 %  |
+| 4 | 60,196,362.5  | 62,810,312.5  | −4.2 %  |
+| 5 | 15,281,600    | 16,448,450    | −7.1 %  |
+| 6 | 34,537,000    | 35,864,550    | −3.7 %  |
 
-Score in the contest is `(best_HPWL / your_HPWL)^2`, so lower is better; the
-30-minute time budget allows much longer runs (and all 32 cores) for further
-gains.
+Score in the contest is `(best_HPWL / your_HPWL)^2`, so lower is better. These
+runs explored ~0.5–1.3 billion candidate placements each (≈700k/s across 32
+threads); a 30 s / 8-thread run already beats every baseline, the full budget
+just widens the margin.
 
 ## Placement renders
 
